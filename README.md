@@ -8,7 +8,7 @@ Step 1: Creating a Custom DDNS Provider in Synology DSM
 - Click on **Customize** and enter the following:
 
 1. **Service provider**: Enom.com
-2. **Query URL**: http://yourdomain.com/synology_ddns_enom/index.php?host=__HOSTNAME__&domain=__USERNAME__&key=__PASSWORD__&ip=__MYIP__
+2. **Query URL**: http://*(yourdomain.com)*/synology_ddns_enom/index.php?host=__HOSTNAME__&domain=__USERNAME__&key=__PASSWORD__&ip=__MYIP__
 
 Step 2: Setting up your DNS Update Host/Password
 ------------------------------------------------
@@ -17,9 +17,9 @@ Step 2: Setting up your DNS Update Host/Password
 
 1. **Service provider**: "\*Enom.com" (This was the service provider you created in Step 1)
 2. **Hostname**: nas
-3. **Username/Email**: yourdomain.com
+3. **Username/Email**: *yourdomain.com*
 4. **Password**: (access password)
 
 Requirements
 ------------
-- [ ] A web server running PHP 5.x with cURL extension accessible by the NAS via url e.g. **[yourdomain.com]**.
+- [ ] A web server running PHP 5.x with cURL extension accessible by the NAS via url e.g. *yourdomain.com*.
