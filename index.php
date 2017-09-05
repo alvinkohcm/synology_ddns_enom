@@ -14,7 +14,7 @@ $key = $_GET['key'];
 $ip = $_GET['ip'];
 
 //Optional - Strip trailing domain from $host value
-$host = str_replace($host, "." . $domain, "");
+$host = str_replace("." . $domain, "", $host);
 
 /******************************************************************************
 * PARAMATERS
