@@ -13,6 +13,9 @@ $domain = $_GET['domain'];
 $key = $_GET['key'];
 $ip = $_GET['ip'];
 
+//Optional - Strip trailing domain from $host value
+$host = str_replace($host, "." . $domain, "");
+
 /******************************************************************************
 * PARAMATERS
 ******************************************************************************/
@@ -21,7 +24,6 @@ $params['HostName'] = $host;
 $params['Zone'] = $domain;
 $params['DomainPassword'] = $key;
 $params['Address'] = $ip;
-
 
 /******************************************************************************
 * UPDATE ENOM
