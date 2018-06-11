@@ -16,8 +16,8 @@ Step 2: Setting up your DNS Update Host/Password
 - Click on **Add** and enter the following:
 
 1. **Service provider**: "\*Enom.com" (This was the service provider you created in Step 1)
-2. **Hostname**: nas (or *nas.yourdomain.com*)
-3. **Username**: Enom UID (User Login ID)
+2. **Hostname**: *nas.yourdomain.com* (full hostname)
+3. **Username**: Enom UID (UID/username for Enom account)
 4. **Password**: (domain password)
 
 Requirements
