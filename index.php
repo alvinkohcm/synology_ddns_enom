@@ -8,22 +8,21 @@ $settings[api] = "https://reseller.enom.com/interface.asp";
 /******************************************************************************
 * START
 ******************************************************************************/
+$token = $_GET['token'];
 $host = $_GET['host'];
-$domain = $_GET['domain'];
+$username = $_GET['username'];
 $key = $_GET['key'];
 $ip = $_GET['ip'];
-
-//Optional - Strip trailing domain from $host value
-$host = str_replace("." . $domain, "", $host);
 
 /******************************************************************************
 * PARAMATERS
 ******************************************************************************/
 $params['command'] = "SetDNSHost";
-$params['HostName'] = $host;
-$params['Zone'] = $domain;
-$params['DomainPassword'] = $key;
-$params['Address'] = $ip;
+$params['uid'] = $username;
+$params['zone'] = $host;
+$params['domainpassword'] = $key;
+$params['address'] = $ip;
+$params['pw'] = $token;
 
 /******************************************************************************
 * UPDATE ENOM
